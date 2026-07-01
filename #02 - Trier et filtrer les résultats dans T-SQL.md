@@ -68,6 +68,40 @@
 - - 📌 **OFFSET** : nombre de lignes à ignorer (peut être 0).
     
 - 📌 **FETCH NEXT** : nombre de lignes à retourner après le décalage.
+
+## SUPPRIMER LES DOUBLONS:
+`DISTINCT` supprime les doublons et retourne uniquement les combinaisons uniques des colonnes listées dans `SELECT`.
+
+## Prédicats (WHERE):
+**WHERE** : filtre les lignes selon des conditions → seules celles évaluées à **TRUE** sont retournées.
+- 📌 ==**Prédicats** = conditions logiques appliquées aux colonnes.==
+    
+    - Opérateurs de comparaison : `=`, `<>`, `>`, `>=`, `<`, `<=`.
+        
+    - Gestion des valeurs nulles : `IS NULL`, `IS NOT NULL`.
+        
+- 📌 **Combinaison de conditions** :
+    
+    - `AND` → toutes les conditions doivent être vraies.
+        
+    - `OR` → au moins une condition doit être vraie.
+        
+    - Parenthèses → clarifient la priorité et évitent les ambiguïtés.
+        
+- 📌 **Opérateurs pratiques** :
+    
+    - `IN` → équivalent à plusieurs `OR`.
+        
+    - `BETWEEN` → intervalle inclusif (utile aussi pour les dates).
+        
+    - `LIKE` → recherche de motifs dans les chaînes (`%` = plusieurs caractères, `_` = un seul caractère).
+        
+- 📌 **Dates** :
+    
+    - Attention aux bornes → `BETWEEN` inclut les limites.
+        
+    - Pour couvrir une journée entière, préciser l’heure (`23:59:59.999`) ou utiliser `>=` et `<`.
+
 ## Syntaxe
 ORDER BY:
 ```sql
@@ -132,6 +166,9 @@ FROM Production.Product
 ORDER BY ListPrice DESC
 OFFSET 10 ROWS
 FETCH NEXT 10 ROWS ONLY;
-
 ```
+---------------------------------------------------------------------
+SUPPRESSION DE DOUBLONS:
+select par défaut :`ALL` = comportement implicite (toutes les lignes, y compris doublons)
 ## Questions que j'ai eues
+
