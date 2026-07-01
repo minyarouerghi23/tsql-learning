@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/# 01 - Introduction aux BD relationnelles.md",
+                "file": "notes/# 01 - Présentation de T-SQL.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "# 01 - Introduction aux BD relationnelles"
+              "title": "# 01 - Présentation de T-SQL"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "ecc228f4f32a258e",
@@ -94,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/# 01 - Introduction aux BD relationnelles.md",
+                "file": "notes/# 01 - Présentation de T-SQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Rétrolien pour # 01 - Introduction aux BD relationnelles"
+              "title": "Rétrolien pour # 01 - Présentation de T-SQL"
             }
           },
           {
@@ -113,12 +114,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/# 01 - Introduction aux BD relationnelles.md",
+                "file": "notes/# 01 - Présentation de T-SQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Liens sortants de # 01 - Introduction aux BD relationnelles"
+              "title": "Liens sortants de # 01 - Présentation de T-SQL"
             }
           },
           {
@@ -156,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/# 01 - Introduction aux BD relationnelles.md",
+                "file": "notes/# 01 - Présentation de T-SQL.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Plan de # 01 - Introduction aux BD relationnelles"
+              "title": "Plan de # 01 - Présentation de T-SQL"
             }
           }
         ]
@@ -185,7 +186,9 @@
   },
   "active": "c3cd0b35090509ee",
   "lastOpenFiles": [
-    "notes/# 01 - Introduction aux BD relationnelles.md",
+    "Pasted image 20260625235054.png",
+    "Pasted image 20260625231219.png",
+    "notes/# 01 - Présentation de T-SQL.md",
     "queries",
     "notes"
   ]
