@@ -117,7 +117,21 @@ OFFSET-FETCH:
 |**TOP (N) WITH TIES**|`` `SELECT` `TOP` `10` `WITH` `TIES` `...` `ORDER` `BY` `Prix` `DESC` ``|Inclure les ex æquo avec la dernière valeur|Peut retourner plus de N lignes si plusieurs ont la même valeur de tri.|
 |**TOP (N) PERCENT**|`` `SELECT` `TOP` `10` `PERCENT` `...` ``|Retourner un pourcentage du total|Arrondi à l’entier supérieur. Peut aussi être combiné avec `` `WITH` `TIES` ``.|
 |**OFFSET-FETCH**|`` `ORDER` `BY` `Colonne` `OFFSET` `20` `ROWS` `FETCH` `NEXT` `10` `ROWS` `ONLY` ``|Pagination (sauter X lignes et récupérer Y lignes)|OFFSET obligatoire, FETCH optionnel. Chaque requête est indépendante, pas d’état côté serveur.|
+EXEMPLE:
+```sql
+-- Page 1 (10 premières lignes)
+SELECT ProductID, ProductName, ListPrice
+FROM Production.Product
+ORDER BY ListPrice DESC
+OFFSET 0 ROWS
+FETCH NEXT 10 ROWS ONLY;
 
+-- Page 2 (lignes 11 à 20)
+SELECT ProductID, ProductName, ListPrice
+FROM Production.Product
+ORDER BY ListPrice DESC
+OFFSET 10 ROWS
+FETCH NEXT 10 ROWS ONLY;
 
+```
 ## Questions que j'ai eues
--
