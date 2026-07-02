@@ -67,7 +67,7 @@ on p.ProductSubcategoryID=psc.ProductSubcategoryID
 WHERE p.ProductNumber LIKE 'FR%' OR psc.ProductCategoryID IN (1,3,4);
 
 ----------------------------------------------------------------------------------
---challenges 
+--challenges (module 1 perdu)
 --1)Retrieve customer data
 
 --1
@@ -90,10 +90,54 @@ JOIN Person.Person pCustomer  --mm table jst pour recup nom client (via le perso
 
 ----------------------------------------------------------------------------------
 --2:retrieve customer order data
-select SELECT CONCAT(c.CustomerID, ': ', st.Name) AS CustomerCompany
+/*select CONCAT(c.CustomerID, ': ', st.Name) AS CustomerCompany
 from sales.Customer c
 join sales.store st
-on c.StoreID = st.BusinessEntityID;
+on c.StoreID = st.BusinessEntityID;*/
+
+/*select concat('*',convert(varchar,OrderDate,102),'(',RevisionNumber,')*') as order
+from sales.SalesOrderHeader;*/
+
+------------------------------------------------------------------------------------------------------
+--3
+----------------------------------------------------------------------------------
+--CHALLENGE 2
+--1
+/*SELECT DISTINCT City, Sv.name AS StateProvinceName
+FROM person.Address a
+join person.StateProvince sv
+on a.StateProvinceID = sv.StateProvinceID
+ORDER BY City ASC;*/
+
+/*select top 10 percent with ties name --with ties bech les ex-aecq tenus en cpt
+from Production.Product
+order by Weight desc;*/
+
+---------------------------------------------------------------------------------------------
+--2
+--1
+ /*SELECT Name, Color, Size
+ FROM production.Product
+ WHERE ProductModelID = 1;*/
+
+ --2
+  SELECT ProductNumber, Name,color,size
+ FROM production.Product
+ WHERE Color IN ('Black','Red','White') AND Size IN ('S','M');
+
+ --3
+  /*SELECT ProductNumber, Name, ListPrice
+ FROM SalesLT.Product
+ WHERE ProductNumber LIKE 'BK-%';*/
+
+ --4
+ /*SELECT ProductNumber, Name, ListPrice
+ FROM SalesLT.Product
+ WHERE ProductNumber LIKE 'BK-%';*/
+
+
+
+
 
 
 

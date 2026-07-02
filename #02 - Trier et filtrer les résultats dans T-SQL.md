@@ -183,3 +183,4 @@ Sales.SalesPerson.BusinessEntityID
 Person.Person.BusinessEntityID
 
 ![[Pasted image 20260702091631.png]]
+![[Pasted image 20260702140133.png]]
