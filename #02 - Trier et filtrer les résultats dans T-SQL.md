@@ -172,3 +172,5 @@ SUPPRESSION DE DOUBLONS:
 select par défaut :`ALL` = comportement implicite (toutes les lignes, y compris doublons)
 ## Questions que j'ai eues
 
+![[Pasted image 20260701121542.png]]
+![[Pasted image 20260701121819.png]]
