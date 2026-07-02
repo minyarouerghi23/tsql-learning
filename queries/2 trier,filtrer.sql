@@ -51,10 +51,21 @@ on p.ProductSubcategoryID=psc.ProductSubcategoryID --on s'arrete là si on ne ve
 
 --double join pour afficher le  nom
 join production.ProductCategory pc
-on pc.ProductCategoryID=psc.ProductCategoryID;*/
+on pc.ProductCategoryID=psc.ProductCategoryID;
 
-SELECT ProductCategoryID, Name, ListPrice
+SELECT ProductCategoryID, p.Name, p.ListPrice,p.SellEndDate --affiché pour confirmer la condition mteha keka w bara
+FROM production.ProductSubcategory psc 
+join production.Product p
+on psc.ProductSubcategoryID=p.ProductSubcategoryID
+WHERE psc.ProductCategoryID IN (1,3,4) and p.SellEndDate is null
+order by psc.ProductCategoryID asc,p.listprice desc;  */
+
+SELECT p.Name, p.ProductNumber, psc.ProductCategoryID
 FROM production.Product p
-join on production.ProductSubcategory psc
-on psc.ProductSubcategoryID=ProductSubcategoryIDp.productsubcategoryid=
-WHERE ProductCategoryID IN (5,6,7);
+join Production.ProductSubcategory psc
+on p.ProductSubcategoryID=psc.ProductSubcategoryID
+WHERE p.ProductNumber LIKE 'FR%' OR psc.ProductCategoryID IN (1,3,4);
+
+
+
+
