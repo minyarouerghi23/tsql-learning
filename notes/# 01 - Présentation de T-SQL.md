@@ -179,6 +179,10 @@
 `CAST(expression AS type)`:convertir 1 val ->type de données cible
 `CONVERT(type, expression, style):mm que cast sauf que elle prend un param supplem pour formater dates+nb (par exp: 101 = `MM/DD/YYYY`, 102 = `YYYY.MM.DD`, 126 = ISO 8601)
 
+!! TYPES:
+si je veux afficher date nrml sans style =>date
+sinon (n)varchar
+
 -diff entre ma version et celle de microsoft learn
 -> moi: v complète != ml: v lite ;  donc j'ai plutôt:  
 - `Sales.Customer (relation client)`

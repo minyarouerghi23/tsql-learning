@@ -86,10 +86,14 @@ JOIN Person.Person pSalesperson
     AND pSalesperson.PersonType = 'SP' --ya +ieurs et sp=salesPerson
 JOIN Person.Person pCustomer  --mm table jst pour recup nom client (via le personID trouvé dans c)
     ON c.PersonID = pCustomer.BusinessEntityID 
-    AND pCustomer.PersonType IN ('IN', 'SC');*/
+    AND pCustomer.PersonType IN ('IN', 'SC');*/ 
 
-
-
+----------------------------------------------------------------------------------
+--2:retrieve customer order data
+select SELECT CONCAT(c.CustomerID, ': ', st.Name) AS CustomerCompany
+from sales.Customer c
+join sales.store st
+on c.StoreID = st.BusinessEntityID;
 
 
 
