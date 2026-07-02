@@ -134,7 +134,12 @@
 - `ISNULL` → "si c'est NULL, mets ça"
 - `NULLIF` → "si c'est ça, mets NULL"
 - `COALESCE` → "donne-moi le premier non-vide"
-![[Pasted image 20260625231219.png]]
+![[Pasted image 20260625231219.png|645]]
+![[Pasted image 20260702081941.png]]
+![[Pasted image 20260702082108.png]]
+![[Pasted image 20260702082310.png]]
+![[Pasted image 20260702082325.png]]
+
 ## Syntaxe
 ```sql
 -- exemple ici

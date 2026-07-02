@@ -35,8 +35,7 @@
               "title": "#02 - Trier et filtrer les résultats dans T-SQL"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -199,18 +198,30 @@
       "bases:Créer une nouvelle base": false
     }
   },
-  "active": "c1dd6dddfc02c9d4",
+  "active": "c3cd0b35090509ee",
   "lastOpenFiles": [
-    "queries/dfm05wt3.a5e~",
-    "queries/2 trier,filtrer.sql",
+    "queries/wmwnh2qd.4zt~",
+    "queries/ljofeah1.n34~",
+    "queries/epmssuem.305~",
+    "queries/qmlqahhb.edd~",
+    "#02 - Trier et filtrer les résultats dans T-SQL.md",
+    "Pasted image 20260702091631.png",
+    "notes/# 01 - Présentation de T-SQL.md",
+    "queries/dygizbnn.35w~",
+    "queries/g03uyuj4.ome~",
+    "queries/r1luzo1u.u4l~",
+    "queries/zwucz5ke.4ub~",
+    "queries/cijr1ktb.hyn~",
+    "Pasted image 20260702082325.png",
+    "Pasted image 20260702082310.png",
+    "Pasted image 20260702082108.png",
+    "Pasted image 20260702081941.png",
+    "queries/c4wk3no1.j5x~",
+    "queries/nnvwym3b.ulr~",
     "Pasted image 20260701121819.png",
     "Pasted image 20260701121805.png",
     "Pasted image 20260701121542.png",
-    "notes/# 01 - Présentation de T-SQL.md",
-    "#02 - Trier et filtrer les résultats dans T-SQL.md",
     "Pasted image 20260625235054.png",
-    "Pasted image 20260625231219.png",
-    "queries",
-    "notes"
+    "Pasted image 20260625231219.png"
   ]
 }

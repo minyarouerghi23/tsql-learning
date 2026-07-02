@@ -58,13 +58,41 @@ FROM production.ProductSubcategory psc
 join production.Product p
 on psc.ProductSubcategoryID=p.ProductSubcategoryID
 WHERE psc.ProductCategoryID IN (1,3,4) and p.SellEndDate is null
-order by psc.ProductCategoryID asc,p.listprice desc;  */
+order by psc.ProductCategoryID asc,p.listprice desc;  
 
 SELECT p.Name, p.ProductNumber, psc.ProductCategoryID
 FROM production.Product p
 join Production.ProductSubcategory psc
 on p.ProductSubcategoryID=psc.ProductSubcategoryID
 WHERE p.ProductNumber LIKE 'FR%' OR psc.ProductCategoryID IN (1,3,4);
+
+----------------------------------------------------------------------------------
+--challenges 
+--1)Retrieve customer data
+
+--1
+select concat(firstname,'',isnull(middlename,''),' ',lastname,'  ',isnull(suffix,'')) as full_name
+from person.person;
+
+--2
+SELECT 
+    CONCAT(pSalesperson.FirstName, ' ', pSalesperson.LastName) AS SalesPersonName,
+    CONCAT(pCustomer.Title, ' ', pCustomer.LastName) AS CustomerName
+FROM Sales.Customer c
+JOIN Sales.SalesPerson sp  
+    ON c.TerritoryID = sp.TerritoryID --mm zone geo
+JOIN Person.Person pSalesperson
+    ON sp.BusinessEntityID = pSalesperson.BusinessEntityID --on/and instead of where bcs =inner join sauf que tna7i null 
+    AND pSalesperson.PersonType = 'SP' --ya +ieurs et sp=salesPerson
+JOIN Person.Person pCustomer  --mm table jst pour recup nom client (via le personID trouvé dans c)
+    ON c.PersonID = pCustomer.BusinessEntityID 
+    AND pCustomer.PersonType IN ('IN', 'SC');*/
+
+
+
+
+
+
 
 
 

@@ -174,3 +174,12 @@ select par défaut :`ALL` = comportement implicite (toutes les lignes, y compris
 
 ![[Pasted image 20260701121542.png]]
 ![[Pasted image 20260701121819.png]]
+Sales.Customer.PersonID 
+    ↓ (le client, en tant que personne)
+Person.Person.BusinessEntityID
+
+Sales.SalesPerson.BusinessEntityID 
+    ↓ (le vendeur, en tant que personne aussi)
+Person.Person.BusinessEntityID
+
+![[Pasted image 20260702091631.png]]
